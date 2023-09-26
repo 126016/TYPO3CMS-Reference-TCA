@@ -56,7 +56,11 @@ It is possible to use markers in the WHERE clause:
    A value you can set from Page TSconfig dynamically.
 
 ###SITE:<KEY>.<SUBKEY>###
-   A value from the site configuration, for example: `###SITE:mySetting.categoryPid###` or `###SITE:rootPageId###`.
+   A value from the site configuration, for example: `###SITE:mySetting.categoryPid###` or `###SITE:rootPageId###`. 
+In config.yaml
+`mySetting:`
+ `   categoryPid: 123` 
+Notice the variable is not unter setttings defined.
 
 The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
 (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
